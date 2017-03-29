@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-Teste
+<table border="1">
+    <caption>Alguns Veiculos</caption>
+    <thead> <tr> <th><strong>Id</strong> <th><strong>Tipo</strong> <th><strong>Placa</strong></thead>
+
+    <tbody>
+    {% for tipoveiculo in tipoveiculos %}
+        <tr> <th>{{ tipoveiculo.id }}</th> <th>{{ tipoveiculo.tipo }} </th><th>{{ tipoveiculo.placa }}</th></tr>
+    {% endfor %}
+
+    </tbody>
+
+</table>
+
 </body>
 </html>
